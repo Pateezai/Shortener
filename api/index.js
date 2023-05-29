@@ -9,7 +9,7 @@ import cors from "cors"
 
 const app = express()
 dotenv.config()
-
+const PORT = 8000
 const connect = async () => {
     try{
         await mongoose.connect(process.env.MONGO_DB);
@@ -45,7 +45,7 @@ app.use((err, req, res, next) => {
     });
   });
 
-app.listen(8000, ()=>{
+app.listen(PORT, ()=>{
     connect()
-    console.log("connected to backend! localhost:8000")
+    console.log(`connected to backend! localhost:${PORT}`)
 })
