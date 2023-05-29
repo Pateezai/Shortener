@@ -30,7 +30,10 @@ app.use(cors())
 app.use(express.json());
 app.use(cookieParser())
 
-app.use("/", urlsRoute)
+app.use("/api", urlsRoute)
+app.get('/about', (req, res) => {
+  res.send('This is about route')
+})
 // app.use("/auth", authRoute)
 // app.use("/users", userRoute)
 
