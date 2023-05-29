@@ -17,7 +17,10 @@ router.put("/update/id/:id", updateUrl)
 //GET by ID
 router.get("/id/:id", getUrl)
 //GET_ALL
-router.get("/", getUrls)
+router.get("/", 
+    console.log('enter serverless function')
+)
+// router.get("/", getUrls)
 //DELETE
 router.delete("/del/id/:id", deleteUrl)
 // router.delete("/del/id/:id", verifyAdmin, deleteUrl)
