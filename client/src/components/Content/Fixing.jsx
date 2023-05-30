@@ -83,7 +83,7 @@ const Fixing = () => {
   const handleUpdate = async (id, key) => {
     setLoading(true);
     try {
-      const res = await axios.put(`http://localhost:8000/update/id/${id}`, {
+      const res = await axios.put(`https://shortener-api-jx5l.onrender.com/api/update/id/${id}`, {
         custom: newcustom[key],
         _id: id,
       });
@@ -177,7 +177,7 @@ const Fixing = () => {
   const handleShowData = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:8000");
+      const res = await axios.get("https://shortener-api-jx5l.onrender.com/api/");
       setData(res.data);
       console.log(res.data);
     } catch (err) {
@@ -191,7 +191,7 @@ const Fixing = () => {
   const handleDelete = async (id) => {
     setLoading(true);
     try {
-      const res = await axios.delete(`http://localhost:8000/del/id/${id}`);
+      const res = await axios.delete(`https://shortener-api-jx5l.onrender.com/api/del/id/${id}`);
       setData(
         data.filter((val) => {
           return val._id != id;
@@ -238,7 +238,7 @@ const Fixing = () => {
         const FetchPost = async () => {
           setLoading(true);
           try {
-            const res = await axios.post("http://localhost:8000/create", {
+            const res = await axios.post("https://shortener-api-jx5l.onrender.com/api/create", {
               original: validated,
               custom: inputValue.custom,
             });

@@ -56,7 +56,7 @@ const Content = () => {
   const handleGet = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:8000/");
+      const res = await axios.get("https://shortener-api-jx5l.onrender.com/api/");
       setData(res.data);
       console.log(res.data);
     } catch (err) {
@@ -73,7 +73,7 @@ const Content = () => {
     try {
       // Send the data to your desired endpoint using POST request
       // const res = await axios.post(`http://localhost:8000/update/id/${id}`, {
-      const res = await axios.put(`http://localhost:8000/update/id/${id}`, {
+      const res = await axios.put(`https://shortener-api-jx5l.onrender.com/api/update/id/${id}`, {
         custom: inputValue.customize,
         id: id,
       });
@@ -106,7 +106,7 @@ const Content = () => {
     setLoading(true);
     try {
       // Send the data to your desired endpoint using POST request
-      const res = await axios.delete(`http://localhost:8000/del/id/${id}`);
+      const res = await axios.delete(`https://shortener-api-jx5l.onrender.com/api/del/id/${id}`);
       setData(
         data.filter((val) => {
           return val._id != id;
@@ -182,7 +182,7 @@ const Content = () => {
         setLoading(true);
         try {
           // Send the data to your desired endpoint using POST request
-          const res = await axios.post("http://localhost:8000/create", {
+          const res = await axios.post("https://shortener-api-jx5l.onrender.com/api/create", {
             original: validated,
             custom: inputValue.custom,
           });
