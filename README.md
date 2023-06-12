@@ -6,7 +6,7 @@ which mean if you shorten some url you'll get something(path) like this "www.exa
 so I am getting the idea that "How's about we can custom our own path?" that why in our website have a custom box for customize
 the path.
 ![image](https://github.com/Pateezai/Shortener/assets/63127601/3867568a-ccf0-4afc-bf02-66d95b27c18a)
-Figure 1. Function flow of my shortener website
+
 
 This is the first ui of website 
 <img width="1184" alt="image" src="https://github.com/Pateezai/Shortener/assets/63127601/975c12a9-8d92-4e87-b556-cbfadb63052b">
