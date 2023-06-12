@@ -1,10 +1,10 @@
 # Shortener
 This project is the beginning of URL Shortener website practice start with using MongoDB, Express and Nodejs 
 
-the idea is normally usual url shortener websites are only provided the auto generated path 
-which mean if you shorten some url you'll get something(path) like this "www.example.com/ArUfD5" which "ArUfD5" is auto generated path
-so I am getting the idea that "How's about we can custom our own path?" that why in our website have a custom box for customize
-the path.
+The idea is that normally usual url-shortener websites are only provide the auto-generated path 
+which mean if you shorten some url you'll get something(path) like "www.example.com/ArUfD5" where "ArUfD5" is an auto-generated path.
+So i'm come up with the idea that "How about we can custom our own path?" That's why in our website have a custom box for customize
+the path name.
 ![image](https://github.com/Pateezai/Shortener/assets/63127601/3867568a-ccf0-4afc-bf02-66d95b27c18a)
 
 
