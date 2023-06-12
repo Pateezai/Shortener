@@ -8,7 +8,7 @@ the path name.
 ![image](https://github.com/Pateezai/Shortener/assets/63127601/3867568a-ccf0-4afc-bf02-66d95b27c18a)
 
 
-This is the first ui of website 
+This is the first UI of website 
 <img width="1184" alt="image" src="https://github.com/Pateezai/Shortener/assets/63127601/975c12a9-8d92-4e87-b556-cbfadb63052b">
 
 The Link with the customize path name "Google"
